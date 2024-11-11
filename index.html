@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Food ordering App</title>
+</head>
+<style>
+
+</style>
+<body>
+    <div class="container">
+    <h1>Food ordering App</h1>
+    <form id="orderForm">
+            <div>
+                <label for="Food">Choose a Food</label>
+                <select id="Food">
+                    <option value="0">beli lah tai</option>
+                    <option value="1000">pizza isi truk</option>
+                    <option value="2000">burger isi spanduk</option>
+                </select>
+            </div>
+            <div>
+            <label for="Drink">Choose a Drink</label>
+                <select id="Drink">
+                    <option value="0">beli lah tai</option>
+                    <option value="1000">jas jus angggur</option>
+                    <option value="2000">jus jeruk</option>
+                </select>
+                </div>
+            <button type="button" id="orderButton">Order</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script>
+        document.getElementById("orderbutton").onclick = Function
+            const foodprice = parseInt(document.getElementById('food').value);
+            const drinkprice = parseInt(document.getElementById('drink').value);
+            let totalPrice = foodprice + drinkprice;
+            let discount = 50;
+            if (totalPrice > 3000) {
+                discount = totalPrice * 0.1;
+                totalPrice -= discount; // totalprice = totalPrice - Discount
+            }
+            const resultDiv = document.getElementById("result");
+            if (totalPrice > 2000) {`
+                total : $${totalPrice}<br>`
+            }
+
+    </script>
+</body>
+</html>
